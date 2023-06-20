@@ -63,7 +63,7 @@ git commit -m "first commit"
 git branch -M main
 
 # リモートリポジトリの接続を追加
-git remote add origin https://github.com/****/*****.git
+git remote add origin https://github.com/anonymous/react-app.git
 
 # ローカルの変更をリモートリポジトリにプッシュ
 git push -u origin main
