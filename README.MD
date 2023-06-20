@@ -15,7 +15,7 @@ docker-compose build --build-arg VERSION="node_version"
 ```
 docker-compose run --rm react sh -c 'yarn create react-app react-app'
 ```
-また、typescriptで構築したい場合は
+また、typescriptで構築したい場合は以下のコマンドで実行してください。
 ```
 yarn create react-app react-app --template typescript
 ```
@@ -25,8 +25,6 @@ yarn create react-app react-app --template typescript
 docker-compose run --rm react sh -c 'yarn create vite'
 ```
 プロジェクト名や使用するテンプレートは、追加のコマンドラインオプションによって直接指定することもできます。
-
-例えば Vite + React のプロジェクトを生成するには以下のコマンドを実行します
 ```
 # npm 6.x
 npm create vite@latest react-app --template react-ts
@@ -40,7 +38,7 @@ yarn create vite react-app --template react-ts
 # pnpm
 pnpm create vite react-app --template react-ts
 ```
-サポートされている各テンプレートの詳細は [create-vite](https://github.com/vitejs/vite/tree/main/packages/create-vite) を参照してください: vanilla, vanilla-ts, vue, vue-ts, react, react-ts, react-swc, react-swc-ts, preact, preact-ts, lit, lit-ts, svelte, svelte-ts.
+サポートされている各テンプレートの詳細は [create-vite](https://github.com/vitejs/vite/tree/main/packages/create-vite) を参照してください: `vanilla`, `vanilla-ts`, `vue`, `vue-ts`, `react`, `react-ts`, `react-swc`, `react-swc-ts`, `preact`, `preact-ts`, `lit`, `lit-ts`, `svelte`, `svelte-ts.
 
 ## コンテナの作成と起動
 ```
