@@ -11,6 +11,15 @@ VERSIONの値には[dockerhubに公開されているタグ](https://hub.docker.
 docker-compose build --build-arg VERSION="node_version"
 ```
 
+## create-react-appでプロジェクトを作成
+```
+docker-compose run --rm react sh -c 'yarn create react-app react-app'
+```
+また、typescriptで構築したい場合は
+```
+yarn create react-app react-app --template typescript
+```
+
 ## Viteでプロジェクトを作成
 ```
 docker-compose run --rm react sh -c 'yarn create vite'
@@ -39,3 +48,31 @@ docker-compose up -d
 ```
 
 ## 作成したプロジェクトをGitHubで管理する
+### 管理したいプロジェクトのディレクトリへ移動
+```
+cd ./projects/react-app
+```
+### Gitリポジトリを作成
+```
+git init
+```
+### ファイルをステージングエリアに追加
+```
+git add .
+```
+### ステージングエリアの変更をコミット
+```
+git commit -m "first commit"
+```
+### ブランチの名前を変更
+```
+git branch -M main
+```
+### リモートリポジトリの接続を追加
+```
+git remote add origin https://github.com/****/*****.git
+```
+### ローカルの変更をリモートリポジトリにプッシュ
+```
+git push -u origin main
+```

@@ -3,4 +3,4 @@ FROM node:${VERSION}
 
 WORKDIR /usr/src/app
 
-RUN npm install 
+RUN npm uninstall -g yarn
